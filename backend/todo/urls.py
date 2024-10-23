@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 from .views import TodoViewsets
 
 router = DefaultRouter()
-router.register(r'todos', TodoViewsets)
+router.register(r'', TodoViewsets)
 
 urlpatterns = [
     path('', include(router.urls)),
