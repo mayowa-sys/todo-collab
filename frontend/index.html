@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Mayowa <span class="green-col">x Dimeji</span></h1>
+        <h1>Todo App</h1>
+    </header>
+    <section class="main">
+        <div class="section-title">
+            <p class="text">All</p>
+            <button class="del-button"><i class="fa-solid fa-trash"></i>Delete All</button>
+        </div>
+        <div class="task-holder">
+            <div class="task">
+                
+            </div>
+        </div>
+        <div class="create" id="create">
+            <i class="fa-solid fa-plus"></i>
+            <p>Create a new task</p>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="form-header">
+                <h2>Add New Task</h2>
+                <p class="btn close" onclick="closeForm()">Go Back</p>
+            </div>
+            <form action="">
+                <div class="form">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <input type="submit" id="submit" value="Done">
+            </form>
+        </div>
+        <span class="close">&times;</span>  
+      </div>
+</body>
+<script src="https://kit.fontawesome.com/fa8e423f7a.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
