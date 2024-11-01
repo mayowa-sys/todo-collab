@@ -32,3 +32,16 @@ window.onclick = function(event) {
     }, 500);
   }
 }
+
+const checkboxes = document.querySelectorAll('.task-checkbox');
+
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const taskContent = this.parentNode.querySelector('.task-content');
+        if (this.checked) {
+            taskContent.classList.add('task-completed');
+        } else {
+            taskContent.classList.remove('task-completed');
+        }
+    });
+});
