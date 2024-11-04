@@ -33,6 +33,49 @@ header{
     height: auto;
 }
 
+.tab{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background-color: #2a4b38;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    width: 33.34%;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: white;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .tab button.active {
+    background-color: #10210f;
+    border: 1px solid #CDCDCD;
+  }
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 .section-title{
     display: flex;
     justify-content: space-between;
@@ -147,18 +190,22 @@ h2:hover{
     cursor: pointer;
 }
 
-#title, #description{
+#title, #description, #date, #update-date, #update-title, #update-description{
     width: 65%;
     margin-top: 10px;
     border: 2px solid #CDCDCD;
 }
 
-#title{
+#title, #update-title{
     height: 40px;
 }
 
-#description{
+#description, #update-description{
     height: 100px;
+}
+
+#date, #update-date{
+    padding: 5px;
 }
 
 h2{
@@ -170,7 +217,7 @@ label{
     margin-top: 10px;
 }
 
-#submit{
+#submit, update-submit{
     width: 70px;
     height: 30px;
     margin-top: 20px;
@@ -271,3 +318,4 @@ label{
 .delete-button:hover {
     background-color: #c9302c;
 }
+
